@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+</script>
 <meta charset="ISO-8859-1">
 <title>Bridge The Gap</title>
-<link href="/scripts/css/js-image-slider.css" rel="stylesheet"
-	type="text/css" />
-<script src="/scripts/js/js-image-slider.js" type="text/javascript"></script>
 <!-- CSS Code -->
 <style type="text/css" scoped>
-.GeneratedText {
-	font-family: 'Brush Script MT';
-	font-size: 7em;
-	font-variant: small-caps;
-	letter-spacing: 0.2em;
-	line-height: 1.0em;
-	color: #CC0099;
-	background-color: #FFFFFF;
-	padding: 0.10em;
+.signupstyle {
+	background-color: #F08080;
+	border: none;
+	color: white;
+	padding: 8px 20px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	top: 4px;
 }
 
-.GeneratedSmallText {
-	font-family: 'Comic Sans MS';
-	font-size: 1.5em;
-	letter-spacing: 0.2em;
-	line-height: 1.3em;
-	color: #330099;
-	background-color: #FFFFFF;
-	padding: 0.10em;
+.bridgethegapTextStyle {
+	position: absolute;
+	color: #F08080;
+	padding: 8px 20px;
+	display: inline-block;
+	font-size: 16px;
+	top: 4px;
 }
 
-.slider {
-	width: 960px;
-	height: 420px;
+.middleTextStyle {
+	position: absolute;
+	color: #F08080;
+	font-size: 60px;
+	top: 75px;
+	left: 200px;
+	right: 200px;
+	font-family: Papyrus;
+}
+
+.contentDiv {
+	position: absolute;
 }
 </style>
 
+<script type="text/javascript">
+function doAjax() {
+    $.ajax({
+      url: 'login.jsp',
+      success: function() {
+        $('#login').jsp();
+      }
+    });
+  }
+</script>
+
+
+
 </head>
+<!-- <body background="/images/people.jpg"> -->
+
 <body>
-	<!-- HTML Code -->
-	<!-- 	<div class="GeneratedText">Bridge The Gap</div> -->
-	<!-- 	<div class="GeneratedSmallText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A technical space</div> -->
-
-	<div id="icon">
-<!-- 		<img src="/images/mcec_icon.png" /> -->
-	</div>
-	<div id="sliderFrame">
-		<div id="slider">
-			<img src="/images/slider_1.jpg" /> <img src="/images/slider_2.jpg" />
-			<img src="/images/slider_3.jpg" />
+	<!-- <body> -->
+		<div class="bridgethegapTextStyle" align="left">bridgethegap</div>
+		<div class="signupbutton" align="right">
+			<button type="submit" class="signupstyle" onclick="doAjax()">Sign
+				Up</button>
 		</div>
-	</div>
-
-
+		<!-- 	<div class="middleTextStyle" align="center">Little steps towards -->
+		<!-- 		better life</div> -->
 </body>
 </html>
+
