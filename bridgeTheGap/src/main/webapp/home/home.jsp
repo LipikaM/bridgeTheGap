@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <meta charset="ISO-8859-1">
 <title>Bridge The Gap</title>
 <!-- CSS Code -->
@@ -42,28 +41,16 @@
 }
 </style>
 
-<script type="text/javascript">
-function doAjax() {
-    $.ajax({
-      url: 'login.jsp',
-      success: function() {
-        $('#login').jsp();
-      }
-    });
-  }
-</script>
-
-
 
 </head>
 <!-- <body background="/images/people.jpg"> -->
-
 <body>
 	<!-- <body> -->
 		<div class="bridgethegapTextStyle" align="left">bridgethegap</div>
 		<div class="signupbutton" align="right">
-			<button type="submit" class="signupstyle" onclick="doAjax()">Sign
+			<button type="submit" class="signupstyle" onclick="location.href='/home/login.jsp'">Sign
 				Up</button>
+				
 		</div>
 		<!-- 	<div class="middleTextStyle" align="center">Little steps towards -->
 		<!-- 		better life</div> -->
