@@ -13,7 +13,7 @@ import com.lipika.missu.entity.User;
 @Controller
 public class LoginController {
 
-	@RequestMapping(value="/home/test", method=RequestMethod.GET)
+	@RequestMapping(value="/home/signup", method=RequestMethod.GET)
     public String signUp(HttpServletRequest request,
     		HttpServletResponse response){
 		
@@ -24,6 +24,19 @@ public class LoginController {
 		user.setPassword(request.getParameter("password"));
 		
     	System.out.println("Sigining up ......");
+        return "/home/loginsuccess.jsp";
+    }
+	
+	
+	@RequestMapping(value="/home/login", method=RequestMethod.GET)
+    public String login(HttpServletRequest request,
+    		HttpServletResponse response){
+		
+		User user = new User();
+		user.setEmail(request.getParameter("email"));
+		user.setPassword(request.getParameter("password"));
+		
+    	System.out.println("Logging In ......");
         return "/home/loginsuccess.jsp";
     }
 }
