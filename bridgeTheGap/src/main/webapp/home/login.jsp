@@ -10,7 +10,7 @@
 </head>
 <body background="/images/Wooden-Bridge-Photos.jpg">
 <form action="<c:url value="login" />" method="GET">
-<div class="bridgethegapTextStyle" align="left">bridgethegap</div>
+<div class="bridgethegapTextStyle" align="left"><a href="http://localhost:8090" style="text-decoration:none;color:pink">bridgethegap</a></div>
 <div class="signupbutton" align="right">
 			<button type="submit" class="signupstyle" onclick="location.href='/home/signup.jsp'">Sign Up</button>
 				
